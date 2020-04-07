@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html[data-theme='light'] {
+    --bg-font-primary: #111111;
+    --bg-font-secondary: #161616;
+    --bg-bg-primary: #ffffff;
+    --bg-bg-secondary: #f2f2f2;
+}
+html[data-theme='dark'] {
+    --bg-font-primary: #ffffff;
+    --bg-font-secondary: #f2f2f2;
+    --bg-bg-primary: #111111;
+    --bg-bg-secondary: #161616;
+}
+body, html {
+    height: 100%;
+}
+header {
+    height: 100%;
+    padding-bottom: 70px;
+}
+main {
+    overflow: hidden;
+}
+footer {
+    height: 70px;
+    margin-top: -70px;
+    background-color: var(--bg-bg-secondary);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: var(--bg-bg-secondary);
+}
+nav ul {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+nav ul li {
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+}
+.nav-logo {
+    font-size: 18px;
+}
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+}
+.nav-btn button {
+    background: none;
+    border: none;
+    outline: none;
+}
+@media only screen and (max-width: 971px) {
+    nav {
+        padding: 50px 50px;
+    }
+}
+@media only screen and (max-width: 675px) {
+    .nav-bar {
+        display: none;
+    }
+}
